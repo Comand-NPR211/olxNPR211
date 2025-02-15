@@ -1,14 +1,19 @@
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CreateAdPage from './pages/CreateAdPage';
+import AdsBoardPage from './pages/AdsBoardPage'; // Assuming you have a home page
+import 'bootstrap/dist/css/bootstrap.min.css';  // If you're using Bootstrap
 
-function App() {
 
+const App = () => {
   return (
-      <>
-          <h1 className="text-3xl font-bold underline">
-              Hello world!
-          </h1>
-      </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<AdsBoardPage />} />
+        <Route path="/create-ad" element={<CreateAdPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,7 @@
+com\example\adsboard\App.class
+com\example\adsboard\config\CorsConfig.class
+com\example\adsboard\entities\AdEntity.class
+com\example\adsboard\repository\AdRepository.class
+com\example\adsboard\controller\AdController.class
+com\example\adsboard\config\AdsConfig.class
+com\example\adsboard\config\CorsConfig$1.class
